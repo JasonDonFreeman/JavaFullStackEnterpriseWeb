@@ -12,7 +12,13 @@
 
 <h1>Welcome to PlantPlaces.com! This is in h1.</h1>
 <em><h:outputLabel value="#{applicationInfo.slogan}"/></em>
-<p>After output label</p>
+Enter a plant name, and then choose Search.
+<h:form>
+	<h:inputText value="#{plant.name}" />
+	<h:commandButton value="submit" action="#{searchPlants.execute}" />
+</h:form>
+
+
 <h:link value="Contact Us" outcome="contactUs"/>
 </h:body>
 
